@@ -3,23 +3,25 @@
    ========================================================================== */
 
 :root {
-  --color-bg: #ffffff;
-  --color-bg-soft: #f6f7f9;
-  --color-bg-soft-2: #eef1f5;
+  --color-bg: #0a0f1c;
+  --color-bg-soft: #0d1526;
+  --color-bg-soft-2: #182544;
+  --color-surface: #121b32;
   --color-primary: #16233f;
   --color-primary-dark: #0c1526;
   --color-primary-light: #2a3c63;
-  --color-accent: #b3924f;
-  --color-accent-light: #d8bf87;
-  --color-price: #c1512d;
-  --color-text: #232733;
-  --color-text-soft: #5b6270;
-  --color-text-faint: #8992a3;
-  --color-border: #e3e6eb;
+  --color-accent: #c9a668;
+  --color-accent-light: #e2c78f;
+  --color-price: #e0855b;
+  --color-heading: #f2f4f9;
+  --color-text: #c3cadb;
+  --color-text-soft: #98a1b8;
+  --color-text-faint: #6c7488;
+  --color-border: rgba(255, 255, 255, 0.1);
   --color-success: #2f7d4f;
-  --shadow-sm: 0 2px 8px rgba(22, 35, 63, 0.06);
-  --shadow-md: 0 8px 24px rgba(22, 35, 63, 0.10);
-  --shadow-lg: 0 16px 40px rgba(22, 35, 63, 0.14);
+  --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.28);
+  --shadow-md: 0 8px 28px rgba(0, 0, 0, 0.38);
+  --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.5);
   --radius-sm: 4px;
   --radius-md: 10px;
   --radius-lg: 18px;
@@ -108,7 +110,7 @@ button {
 .section-title {
   font-size: 32px;
   font-weight: 700;
-  color: var(--color-primary);
+  color: var(--color-heading);
   letter-spacing: 0.02em;
 }
 
@@ -217,7 +219,7 @@ button {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(10, 15, 28, 0.86);
   backdrop-filter: saturate(180%) blur(10px);
 }
 
@@ -235,7 +237,7 @@ button {
   gap: 8px;
   font-weight: 800;
   font-size: 26px;
-  color: var(--color-primary);
+  color: var(--color-heading);
   letter-spacing: 0.02em;
   flex-shrink: 0;
 }
@@ -271,7 +273,7 @@ button {
 .main-nav a:hover,
 .main-nav a[aria-current="page"] {
   background: var(--color-bg-soft-2);
-  color: var(--color-primary);
+  color: var(--color-heading);
 }
 
 .header-actions {
@@ -295,7 +297,7 @@ button {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: var(--color-primary);
+  color: var(--color-heading);
 }
 
 .header-phone-icon {
@@ -306,7 +308,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-primary);
+  color: var(--color-heading);
   flex-shrink: 0;
 }
 
@@ -319,7 +321,7 @@ button {
 .header-phone-number {
   font-size: 18px;
   font-weight: 800;
-  color: var(--color-primary);
+  color: var(--color-heading);
 }
 
 .header-phone-hours {
@@ -349,7 +351,7 @@ button {
   height: 42px;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
-  background: #fff;
+  background: var(--color-surface);
 }
 
 .nav-toggle span {
@@ -357,7 +359,7 @@ button {
   width: 20px;
   height: 2px;
   margin: 0 auto;
-  background: var(--color-primary);
+  background: var(--color-heading);
   transition: transform var(--transition-base), opacity var(--transition-base);
 }
 
@@ -495,7 +497,8 @@ button {
   display: flex;
   align-items: center;
   gap: 14px;
-  background: rgba(255, 255, 255, 0.96);
+  background: rgba(18, 27, 50, 0.9);
+  border: 1px solid var(--color-border);
   backdrop-filter: blur(6px);
   border-radius: var(--radius-md);
   padding: 18px 24px;
@@ -523,7 +526,7 @@ button {
 .hero-stat-value {
   font-size: 24px;
   font-weight: 800;
-  color: var(--color-primary);
+  color: var(--color-heading);
   line-height: 1.3;
 }
 
@@ -563,12 +566,12 @@ button {
 .search-title h2 {
   font-size: 23px;
   font-weight: 800;
-  color: var(--color-primary);
+  color: var(--color-heading);
   letter-spacing: 0.02em;
 }
 
 .search-card {
-  background: #fff;
+  background: var(--color-surface);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
   padding: 30px;
@@ -622,7 +625,7 @@ button {
   padding: 0 14px;
   border-radius: var(--radius-sm);
   border: 1px solid var(--color-border);
-  background: #fff;
+  background: var(--color-surface);
   font-size: 14.5px;
   color: var(--color-text);
   font-family: inherit;
@@ -653,10 +656,10 @@ button {
   gap: 12px;
   padding: 16px 26px;
   border-radius: var(--radius-md);
-  background: #fff;
+  background: var(--color-surface);
   font-size: 14.5px;
   font-weight: 700;
-  color: var(--color-primary);
+  color: var(--color-heading);
   border: 1px solid var(--color-border);
   transition: transform var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base);
 }
@@ -695,7 +698,7 @@ button {
   gap: 6px;
   font-size: 14px;
   font-weight: 700;
-  color: var(--color-primary);
+  color: var(--color-heading);
   flex-shrink: 0;
 }
 
@@ -739,13 +742,13 @@ button {
   width: 46px;
   height: 46px;
   border-radius: 50%;
-  background: #fff;
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
   box-shadow: var(--shadow-md);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-primary);
+  color: var(--color-heading);
   z-index: 3;
 }
 
@@ -795,7 +798,7 @@ button {
 
 .property-card {
   position: relative;
-  background: #fff;
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   overflow: hidden;
@@ -921,7 +924,7 @@ button {
 }
 
 .reason-card {
-  background: #fff;
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   padding: 38px 30px;
@@ -960,7 +963,7 @@ button {
 .reason-card h3 {
   font-size: 18px;
   font-weight: 700;
-  color: var(--color-primary);
+  color: var(--color-heading);
   margin-bottom: 12px;
 }
 
@@ -1036,7 +1039,7 @@ button {
 .assessment-content h2 {
   font-size: 28px;
   font-weight: 800;
-  color: var(--color-primary);
+  color: var(--color-heading);
   margin: 14px 0 16px;
 }
 
@@ -1067,7 +1070,7 @@ button {
 }
 
 .contact-card {
-  background: #fff;
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   padding: 34px 26px;
@@ -1084,13 +1087,13 @@ button {
   align-items: center;
   justify-content: center;
   background: var(--color-bg-soft-2);
-  color: var(--color-primary);
+  color: var(--color-heading);
 }
 
 .contact-card h3 {
   font-size: 16.5px;
   font-weight: 700;
-  color: var(--color-primary);
+  color: var(--color-heading);
   margin-bottom: 8px;
 }
 
@@ -1103,13 +1106,13 @@ button {
 .contact-card .tel-number {
   font-size: 24px;
   font-weight: 800;
-  color: var(--color-primary);
+  color: var(--color-heading);
   display: block;
   margin-bottom: 6px;
 }
 
 .contact-bar {
-  background: #fff;
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   padding: 36px 44px;
@@ -1149,7 +1152,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-primary);
+  color: var(--color-heading);
   flex-shrink: 0;
 }
 
@@ -1169,7 +1172,7 @@ button {
   display: block;
   font-size: 17px;
   font-weight: 800;
-  color: var(--color-primary);
+  color: var(--color-heading);
 }
 
 .contact-bar-divider {
@@ -1202,7 +1205,7 @@ button {
    ========================================================================== */
 
 .form-card {
-  background: #fff;
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   padding: 40px;
@@ -1254,7 +1257,7 @@ button {
 .form-group textarea:focus {
   outline: 2px solid var(--color-accent-light);
   outline-offset: 1px;
-  background: #fff;
+  background: var(--color-surface);
 }
 
 .form-group textarea {
@@ -1394,7 +1397,7 @@ button {
    ========================================================================== */
 
 .filter-bar {
-  background: #fff;
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   padding: 26px 30px;
@@ -1421,7 +1424,7 @@ button {
 }
 
 .result-meta strong {
-  color: var(--color-primary);
+  color: var(--color-heading);
   font-size: 17px;
 }
 
@@ -1504,7 +1507,7 @@ button {
 .detail-title {
   font-size: 24px;
   font-weight: 800;
-  color: var(--color-primary);
+  color: var(--color-heading);
 }
 
 .detail-price {
@@ -1550,7 +1553,7 @@ button {
 
 .feature-tags span {
   background: var(--color-bg-soft-2);
-  color: var(--color-primary);
+  color: var(--color-heading);
   font-size: 12.5px;
   font-weight: 700;
   padding: 8px 14px;
@@ -1580,7 +1583,7 @@ button {
 .side-panel {
   position: sticky;
   top: calc(var(--header-height) + 20px);
-  background: #fff;
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   padding: 28px;
@@ -1590,7 +1593,7 @@ button {
 .side-panel h3 {
   font-size: 16px;
   font-weight: 700;
-  color: var(--color-primary);
+  color: var(--color-heading);
   margin-bottom: 18px;
 }
 
@@ -1618,7 +1621,7 @@ button {
 .agent-mini .name {
   font-size: 13.5px;
   font-weight: 700;
-  color: var(--color-primary);
+  color: var(--color-heading);
 }
 
 .agent-mini .role {
@@ -1723,7 +1726,7 @@ button {
 }
 
 .flow-step {
-  background: #fff;
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   padding: 30px 22px;
@@ -1749,7 +1752,7 @@ button {
 .flow-step h3 {
   font-size: 15.5px;
   font-weight: 700;
-  color: var(--color-primary);
+  color: var(--color-heading);
   margin-bottom: 10px;
 }
 
@@ -1765,7 +1768,7 @@ button {
 
 .faq-item summary {
   font-weight: 700;
-  color: var(--color-primary);
+  color: var(--color-heading);
   cursor: pointer;
   font-size: 15px;
   display: flex;
@@ -1800,7 +1803,7 @@ button {
 
 .policy-body h2 {
   font-size: 18px;
-  color: var(--color-primary);
+  color: var(--color-heading);
   margin: 34px 0 12px;
 }
 
@@ -1978,7 +1981,7 @@ button {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #fff;
+    background: var(--color-surface);
     flex-direction: column;
     align-items: stretch;
     padding: 20px;
