@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="K-Life スタッフ対応イメージ（プレースホルダー）">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16233f"/>
+      <stop offset="100%" stop-color="#2a3c63"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#g)"/>
+  <circle cx="980" cy="150" r="180" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="120" cy="780" r="220" fill="rgba(255,255,255,0.05)"/>
+  <g stroke="rgba(255,255,255,0.9)" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="470" cy="360" r="70"/>
+    <path d="M340,600 C340,480 600,480 600,600 L600,650 L340,650 Z"/>
+    <circle cx="730" cy="380" r="60"/>
+    <path d="M620,610 C620,510 840,510 840,610 L840,650 L620,650 Z"/>
+  </g>
+  <g fill="rgba(216,191,135,0.8)">
+    <rect x="430" y="700" width="340" height="10" rx="5"/>
+    <rect x="470" y="730" width="260" height="10" rx="5"/>
+  </g>
+</svg>

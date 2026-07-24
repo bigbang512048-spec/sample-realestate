@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="戸建てイメージ（イラスト・プレースホルダー）">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#bfe0f2"/>
+      <stop offset="100%" stop-color="#eaf5fb"/>
+    </linearGradient>
+    <linearGradient id="grass" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9bc98a"/>
+      <stop offset="100%" stop-color="#83b56e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="670" cy="95" r="46" fill="#fbdf8c" opacity="0.9"/>
+  <circle cx="670" cy="95" r="70" fill="#fbdf8c" opacity="0.25"/>
+  <g fill="#ffffff" opacity="0.85">
+    <ellipse cx="120" cy="90" rx="46" ry="18"/>
+    <ellipse cx="160" cy="80" rx="34" ry="15"/>
+    <ellipse cx="90" cy="78" rx="30" ry="13"/>
+  </g>
+  <rect x="0" y="452" width="800" height="148" fill="url(#grass)"/>
+  <path d="M560,600 L630,452 L700,452 L680,600 Z" fill="#d7dbe0"/>
+  <path d="M572,600 L636,452 L654,452 L622,600 Z" fill="#c3c8cf"/>
+  <ellipse cx="330" cy="466" rx="185" ry="16" fill="rgba(20,30,20,0.12)"/>
+  <g>
+    <ellipse cx="638" cy="440" rx="34" ry="10" fill="rgba(20,30,20,0.12)"/>
+    <rect x="630" y="380" width="16" height="62" fill="#8a6a4d"/>
+    <circle cx="638" cy="360" r="34" fill="#6fa85a"/>
+    <circle cx="614" cy="378" r="26" fill="#79b364"/>
+    <circle cx="662" cy="378" r="26" fill="#79b364"/>
+  </g>
+  <rect x="205" y="330" width="250" height="136" fill="#eef2f5"/>
+  <rect x="205" y="330" width="250" height="10" fill="#dfe4ea"/>
+  <polygon points="188,330 330,238 472,330" fill="#5a6b7d"/>
+  <polygon points="188,330 330,238 330,250 200,332" fill="#414f5e" opacity="0.55"/>
+  <rect x="392" y="255" width="24" height="55" fill="#414f5e"/>
+  <rect x="392" y="255" width="24" height="10" fill="#3a3f47"/>
+  <rect x="300" y="378" width="56" height="88" fill="#b5573c"/>
+  <circle cx="345" cy="424" r="3.5" fill="#f3e6c8"/>
+  <g fill="#eef6fb" stroke="#c9d3da" stroke-width="2">
+    <rect x="228" y="356" width="46" height="42"/>
+    <rect x="386" y="356" width="46" height="42"/>
+  </g>
+  <g stroke="#c9d3da" stroke-width="2">
+    <line x1="251" y1="356" x2="251" y2="398"/>
+    <line x1="228" y1="377" x2="274" y2="377"/>
+    <line x1="409" y1="356" x2="409" y2="398"/>
+    <line x1="386" y1="377" x2="432" y2="377"/>
+  </g>
+  <rect x="224" y="398" width="54" height="10" fill="#8a6a4d"/>
+  <rect x="382" y="398" width="54" height="10" fill="#8a6a4d"/>
+  <g fill="#6fa85a">
+    <circle cx="222" cy="452" r="16"/>
+    <circle cx="246" cy="458" r="13"/>
+    <circle cx="440" cy="452" r="16"/>
+    <circle cx="462" cy="458" r="13"/>
+  </g>
+</svg>

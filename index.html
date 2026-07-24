@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>K-Life｜岡山県の不動産会社 住宅・土地・中古住宅・賃貸をお探しなら</title>
+<meta name="description" content="K-Lifeは岡山県密着の不動産会社です。新築戸建・中古戸建・マンション・土地の購入から売却まで、地域に根ざした丁寧なサポートでお客様の理想の住まい探しをお手伝いします。">
+<meta name="keywords" content="岡山,不動産,K-Life,新築戸建,中古戸建,マンション,土地,売却,査定">
+<link rel="canonical" href="https://www.k-life-okayama.example.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="K-Life｜岡山県の不動産会社">
+<meta property="og:description" content="岡山で理想の住まいを見つける。地域密着のK-Lifeが購入から売却までサポートします。">
+<meta property="og:locale" content="ja_JP">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "RealEstateAgent",
+  "name": "K-Life",
+  "image": "https://www.k-life-okayama.example.com/images/office.svg",
+  "telephone": "+81-86-123-4567",
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "岡山県",
+    "addressLocality": "岡山市北区",
+    "streetAddress": "本町1-1（プレースホルダー住所）",
+    "addressCountry": "JP"
+  },
+  "areaServed": "岡山県",
+  "url": "https://www.k-life-okayama.example.com/"
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">K-<span>Life</span><small>OKAYAMA REAL ESTATE</small></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" aria-current="page">ホーム</a>
+      <a href="properties.html">物件を探す</a>
+      <a href="sell.html">売却相談</a>
+      <a href="company.html">会社概要</a>
+      <a href="contact.html">お問い合わせ</a>
+    </nav>
+    <div class="header-actions">
+      <div class="header-info">
+        <a href="tel:0861234567" class="header-phone">
+          <span class="header-phone-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.12.9.32 1.78.6 2.63a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.45-1.17a2 2 0 012.11-.45c.85.28 1.73.48 2.63.6A2 2 0 0122 16.92z"/></svg>
+          </span>
+          <span class="header-phone-text">
+            <span class="header-phone-number">086-123-4567</span>
+            <span class="header-phone-hours">営業時間 9:00-18:00（水曜定休）</span>
+          </span>
+        </a>
+        <a href="contact.html" class="btn btn-dark header-contact-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
+          お問い合わせ
+        </a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- メインビジュアル -->
+  <section class="hero">
+    <img src="images/hero.svg" alt="" class="hero-bg" width="1600" height="900">
+    <div class="container">
+      <div class="hero-inner">
+        <p class="hero-eyebrow">OKAYAMA LOCAL REAL ESTATE</p>
+        <h1>岡山で、理想の住まいを見つける。</h1>
+        <p>新築戸建・中古戸建・マンション・土地まで。地域密着のK-Lifeが、住まい探しから売却まで一人ひとりに寄り添ってサポートします。</p>
+        <div class="hero-actions">
+          <a href="properties.html" class="btn btn-dark">物件を探す</a>
+          <a href="contact.html" class="btn btn-primary">無料相談する</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+      </div>
+      <div>
+        <p class="hero-stat-label">岡山エリアの掲載物件数</p>
+        <p class="hero-stat-value"><span id="heroPropertyCount">0</span>件</p>
+        <p class="hero-stat-date" id="heroStatDate"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 物件検索 -->
+  <section class="search-panel">
+    <div class="container">
+      <div class="search-title reveal">
+        <span class="line"></span>
+        <h2>理想の住まいを探す</h2>
+        <span class="line"></span>
+      </div>
+      <div class="search-card reveal">
+        <form id="homeSearchForm">
+          <div class="search-grid">
+            <div class="field">
+              <label for="area">エリアから探す</label>
+              <select id="area" name="area">
+                <option value="">エリアを選択</option>
+                <option value="岡山市北区">岡山市北区</option>
+                <option value="岡山市中区">岡山市中区</option>
+                <option value="岡山市南区">岡山市南区</option>
+                <option value="倉敷市">倉敷市</option>
+                <option value="総社市">総社市</option>
+                <option value="都窪郡早島町">都窪郡早島町</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="price">価格から探す</label>
+              <select id="price" name="price">
+                <option value="">上限を選択</option>
+                <option value="1000">1,000万円以下</option>
+                <option value="2000">2,000万円以下</option>
+                <option value="3000">3,000万円以下</option>
+                <option value="4000">4,000万円以下</option>
+                <option value="99999">上限なし</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="type">物件種別から探す</label>
+              <select id="type" name="type">
+                <option value="">種別を選択</option>
+                <option value="new-house">新築戸建</option>
+                <option value="used-house">中古戸建</option>
+                <option value="mansion">マンション</option>
+                <option value="land">土地</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="feature">その他の条件</label>
+              <select id="feature" name="feature">
+                <option value="">こだわり条件</option>
+                <option value="駐車場">駐車場あり</option>
+                <option value="ペット">ペット相談可</option>
+                <option value="新築">新築・築浅</option>
+                <option value="角">角部屋・角地</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-dark search-submit">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              この条件で探す
+            </button>
+          </div>
+        </form>
+        <div class="category-links">
+          <a href="properties.html?type=new-house" class="category-link" data-type-link="new-house">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+            新築戸建
+          </a>
+          <a href="properties.html?type=used-house" class="category-link" data-type-link="used-house">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-8 9 8"/><path d="M9 21V12h6v9"/></svg>
+            中古戸建
+          </a>
+          <a href="properties.html?type=mansion" class="category-link" data-type-link="mansion">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="3" width="14" height="18"/><line x1="9" y1="8" x2="9" y2="8"/><line x1="9" y1="12" x2="9" y2="12"/><line x1="15" y1="8" x2="15" y2="8"/><line x1="15" y1="12" x2="15" y2="12"/></svg>
+            マンション
+          </a>
+          <a href="properties.html?type=land" class="category-link" data-type-link="land">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18"/><path d="M5 21V9l7-5 7 5v12"/></svg>
+            土地
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- おすすめ物件 -->
+  <section class="section" id="recommend">
+    <div class="container">
+      <div class="section-head-row reveal">
+        <div>
+          <p class="section-eyebrow">RECOMMEND</p>
+          <h2 class="section-title">おすすめ物件</h2>
+        </div>
+        <a href="properties.html" class="view-all-link">
+          一覧を見る
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="carousel-wrap">
+        <button type="button" class="carousel-arrow prev" data-carousel-prev aria-label="前の物件">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <div class="carousel-track" id="featuredGrid"></div>
+        <button type="button" class="carousel-arrow next" data-carousel-next aria-label="次の物件">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 選ばれる理由 -->
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-eyebrow">WHY K-LIFE</p>
+        <h2 class="section-title">K-Lifeが選ばれる理由</h2>
+      </div>
+      <div class="reason-grid">
+        <div class="reason-card reveal">
+          <div class="reason-icon">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+          </div>
+          <h3>岡山地域密着</h3>
+          <p>岡山県内の地域情報を熟知したスタッフが、エリアの特性や生活環境まで踏まえてご提案します。</p>
+        </div>
+        <div class="reason-card reveal">
+          <div class="reason-icon">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.35-9.5-8.5C.5 8 3 4 7 4c2 0 3.5 1 5 3 1.5-2 3-3 5-3 4 0 6.5 4 4.5 8.5C19 16.65 12 21 12 21z"/></svg>
+          </div>
+          <h3>丁寧なサポート</h3>
+          <p>ご相談から契約後のアフターフォローまで、専任担当者が最後まで責任をもって対応します。</p>
+        </div>
+        <div class="reason-card reveal">
+          <div class="reason-icon">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <h3>購入から売却まで対応</h3>
+          <p>住まいの購入だけでなく、売却・買い替え・査定までワンストップでご相談いただけます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 不動産売却相談 -->
+  <section class="section">
+    <div class="container">
+      <div class="assessment-split reveal">
+        <div class="assessment-content">
+          <p class="section-eyebrow">FREE ASSESSMENT</p>
+          <h2>無料で査定いたします</h2>
+          <p>「今の家がいくらで売れるか知りたい」「住み替えを検討している」など、岡山エリアの最新相場をもとに適正価格をご提案します。</p>
+          <a href="sell.html" class="btn btn-primary">無料査定を依頼する</a>
+        </div>
+        <div class="assessment-image">
+          <img src="images/assessment.svg" alt="無料査定イメージ" loading="lazy" width="800" height="700">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- お問い合わせ -->
+  <section class="section section-soft" id="contact-top">
+    <div class="container">
+      <div class="contact-bar reveal">
+        <p class="contact-bar-label">お気軽にご相談ください</p>
+        <div class="contact-bar-row">
+          <a href="tel:0861234567" class="contact-bar-item">
+            <span class="contact-bar-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.12.9.32 1.78.6 2.63a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.45-1.17a2 2 0 012.11-.45c.85.28 1.73.48 2.63.6A2 2 0 0122 16.92z"/></svg>
+            </span>
+            <span>
+              <span class="contact-bar-title">お電話でのお問い合わせ</span>
+              <span class="contact-bar-value">086-123-4567</span>
+            </span>
+          </a>
+          <div class="contact-bar-divider"></div>
+          <div class="contact-bar-item">
+            <span class="contact-bar-icon line">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+            </span>
+            <span>
+              <span class="contact-bar-title">LINEでのお問い合わせ</span>
+              <a href="https://line.me/R/ti/p/%40k-life-okayama" target="_blank" rel="noopener" class="line-badge">友だち追加する</a>
+            </span>
+          </div>
+          <div class="contact-bar-divider"></div>
+          <a href="contact.html" class="contact-bar-item">
+            <span class="contact-bar-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
+            </span>
+            <span>
+              <span class="contact-bar-title">メールでのお問い合わせ</span>
+              <span class="contact-bar-value">お問い合わせフォームへ</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <p class="footer-brand">K-<span>Life</span></p>
+        <p class="footer-meta">
+          株式会社K-Life（プレースホルダー社名）<br>
+          〒700-0000<br>
+          岡山県岡山市北区本町1-1（プレースホルダー住所）<br>
+          TEL：086-123-4567<br>
+          営業時間：9:00〜18:00（水曜定休）<br>
+          宅地建物取引業免許　岡山県知事(1)第12345号（プレースホルダー）
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>MENU</h4>
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="properties.html">物件を探す</a></li>
+          <li><a href="sell.html">売却相談</a></li>
+          <li><a href="company.html">会社概要</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>物件を探す</h4>
+        <ul>
+          <li><a href="properties.html?type=new-house">新築戸建</a></li>
+          <li><a href="properties.html?type=used-house">中古戸建</a></li>
+          <li><a href="properties.html?type=mansion">マンション</a></li>
+          <li><a href="properties.html?type=land">土地</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>お問い合わせ</h4>
+        <ul>
+          <li><a href="contact.html">お問い合わせフォーム</a></li>
+          <li><a href="tel:0861234567">086-123-4567</a></li>
+          <li><a href="https://line.me/R/ti/p/%40k-life-okayama" target="_blank" rel="noopener">LINEで相談</a></li>
+          <li><a href="privacy.html">プライバシーポリシー</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 K-Life. All Rights Reserved.</span>
+      <a href="privacy.html">プライバシーポリシー</a>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-cta-bar">
+  <a href="tel:0861234567" class="tel">電話で相談</a>
+  <a href="https://line.me/R/ti/p/%40k-life-okayama" target="_blank" rel="noopener" class="line">LINEで相談</a>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
