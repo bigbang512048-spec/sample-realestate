@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="K-Life 店舗イメージ（プレースホルダー）">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Sample 店舗イメージ（プレースホルダー）">
   <defs>
     <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#eef1f5"/>
@@ -13,7 +13,7 @@
     <rect x="510" y="300" width="180" height="220" fill="#eef1f5" opacity="0.9"/>
     <rect x="720" y="300" width="180" height="220" fill="#eef1f5" opacity="0.9"/>
     <rect x="260" y="220" width="680" height="46" fill="#b3924f"/>
-    <text x="600" y="253" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="700" fill="#16233f">K-Life 岡山本店</text>
+    <text x="600" y="253" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="700" fill="#16233f">Sample 岡山本店</text>
   </g>
   <g fill="#8992a3">
     <rect x="150" y="580" width="60" height="90"/>

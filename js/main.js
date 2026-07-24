@@ -1,5 +1,5 @@
 /*
- * K-Life 共通スクリプト
+ * Sample 共通スクリプト
  * ハンバーガーメニュー／物件カード描画／検索・絞り込み／物件詳細描画／お問い合わせフォーム(mailto)
  */
 
@@ -50,7 +50,7 @@ function initNav() {
 
 function getFavorites() {
   try {
-    return new Set(JSON.parse(localStorage.getItem("klife_favorites") || "[]"));
+    return new Set(JSON.parse(localStorage.getItem("sample_favorites") || "[]"));
   } catch (e) {
     return new Set();
   }
@@ -117,7 +117,7 @@ function initFavorites() {
     } else {
       favorites.add(id);
     }
-    localStorage.setItem("klife_favorites", JSON.stringify([...favorites]));
+    localStorage.setItem("sample_favorites", JSON.stringify([...favorites]));
 
     btn.classList.toggle("is-active", !isActive);
     const svgPath = btn.querySelector("svg");
@@ -279,7 +279,7 @@ function initPropertyDetail() {
   const id = Number(getParam("id"));
   const p = PROPERTIES.find((item) => item.id === id) || PROPERTIES[0];
 
-  document.title = `${p.title}｜K-Life（岡山県の不動産会社）`;
+  document.title = `${p.title}｜Sample（岡山県の不動産会社）`;
 
   const set = (selector, value) => {
     const el = root.querySelector(selector);
@@ -400,14 +400,14 @@ document.addEventListener("DOMContentLoaded", () => {
   initPropertyDetail();
 
   attachMailtoForm("contactForm", {
-    to: "info@k-life-okayama.example.com",
-    subject: "【K-Life】ホームページからのお問い合わせ",
+    to: "info@sample-realestate.example.com",
+    subject: "【Sample】ホームページからのお問い合わせ",
     statusId: "contactFormStatus",
   });
 
   attachMailtoForm("assessmentForm", {
-    to: "info@k-life-okayama.example.com",
-    subject: "【K-Life】無料査定のお申し込み",
+    to: "info@sample-realestate.example.com",
+    subject: "【Sample】無料査定のお申し込み",
     statusId: "assessmentFormStatus",
   });
 
